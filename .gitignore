@@ -3,3 +3,7 @@ __pycache__/
 .DS_Store
 .gemini/
 .agents/
+
+# 開発用・データ生成用スクリプト（GitHub Pagesの公開範囲から除外）
+data_*.py
+generate_questions.py
