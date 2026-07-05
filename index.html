@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AWS SAP 試験対策クイズ - プロフェッショナル学習ツール</title>
-  <meta name="description" content="AWS Certified Solutions Architect - Professional (SAP-C02) 試験対策用のクイズWebアプリケーション。サービスの役割や設計パターンの理解を深めます。">
+  <meta name="description"
+    content="AWS Certified Solutions Architect - Professional (SAP-C02) 試験対策用のクイズWebアプリケーション。サービスの役割や設計パターンの理解を深めます。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="app-container">
     <!-- グローバルヘッダー -->
     <header class="app-header">
       <div class="header-logo" id="header-logo-btn" role="button" tabindex="0" aria-label="ダッシュボードに戻る">
         <svg class="aws-logo-icon" viewBox="0 0 24 24" width="32" height="32">
-          <path fill="currentColor" d="M12.04 3.5c.2 0 .38.08.53.22l8.25 8.25c.3.3.3.77 0 1.06l-8.25 8.25c-.15.14-.33.22-.53.22s-.38-.08-.53-.22l-8.25-8.25c-.3-.3-.3-.77 0-1.06l8.25-8.25c.15-.14.33-.22.53-.22m0-1.5c-.77 0-1.5.3-2.06.86L1.73 11.1c-1.14 1.14-1.14 3 0 4.14l8.25 8.25c.56.56 1.29.86 2.06.86s1.5-.3 2.06-.86l8.25-8.25c1.14-1.14 1.14-3 0-4.14l-8.25-8.25C13.54 2.3 12.81 2 12.04 2z"/>
-          <path fill="#FF9900" d="M12 9.5c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm0-2c2.48 0 4.5 2.02 4.5 4.5s-2.02 4.5-4.5 4.5-4.5-2.02-4.5-4.5 2.02-4.5 4.5-4.5z"/>
+          <path fill="currentColor"
+            d="M12.04 3.5c.2 0 .38.08.53.22l8.25 8.25c.3.3.3.77 0 1.06l-8.25 8.25c-.15.14-.33.22-.53.22s-.38-.08-.53-.22l-8.25-8.25c-.3-.3-.3-.77 0-1.06l8.25-8.25c.15-.14.33-.22.53-.22m0-1.5c-.77 0-1.5.3-2.06.86L1.73 11.1c-1.14 1.14-1.14 3 0 4.14l8.25 8.25c.56.56 1.29.86 2.06.86s1.5-.3 2.06-.86l8.25-8.25c1.14-1.14 1.14-3 0-4.14l-8.25-8.25C13.54 2.3 12.81 2 12.04 2z" />
+          <path fill="#FF9900"
+            d="M12 9.5c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5zm0-2c2.48 0 4.5 2.02 4.5 4.5s-2.02 4.5-4.5 4.5-4.5-2.02-4.5-4.5 2.02-4.5 4.5-4.5z" />
         </svg>
         <span class="header-title-text">AWS SAP <span class="accent-text">Master</span></span>
       </div>
@@ -66,7 +73,7 @@
 
         <!-- 基礎トレーニング -->
         <div class="section-title-area" style="margin-top: 30px;">
-          <h2>基礎トレーニング（基礎トレ編）</h2>
+          <h2>基礎トレーニング</h2>
         </div>
         <div class="basic-card-wrap" id="basic-card-container">
           <!-- JSで動的に構築されます -->
@@ -96,7 +103,9 @@
       <section id="view-quiz" class="app-view">
         <div class="quiz-nav-header">
           <button id="btn-quit-quiz" class="btn-secondary-icon" aria-label="ダッシュボードに戻る">
-            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+            </svg>
             ダッシュボード
           </button>
           <div class="quiz-meta-info">
@@ -107,7 +116,8 @@
           </div>
           <button id="btn-bookmark-toggle" class="btn-bookmark-icon" aria-label="ブックマークに登録/解除">
             <svg class="bookmark-svg" viewBox="0 0 24 24" width="22" height="22">
-              <path fill="none" stroke="currentColor" stroke-width="2" d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+              <path fill="none" stroke="currentColor" stroke-width="2"
+                d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" />
             </svg>
           </button>
         </div>
@@ -161,7 +171,8 @@
         <div class="result-container glass-panel">
           <div class="result-celebration">
             <svg class="trophy-icon" viewBox="0 0 24 24" width="80" height="80">
-              <path fill="#FF9900" d="M18 2H6c-1.1 0-2 .9-2 2v3c0 2.24 1.81 4.07 4 4.3V16c0 2.2 1.8 4 4 4h1v2H9v2h6v-2h-3v-2h1c2.2 0 4-1.8 4-4v-4.7c2.19-.23 4-2.06 4-4.3V4c0-1.1-.9-2-2-2zm-10 5V4h2v3c0 .8-.4 1.5-1 1.8-.6-.3-1-1-1-1.8zm9 0c0 .8-.4 1.5-1 1.8-.6-.3-1-1-1-1.8V4h2v3z"/>
+              <path fill="#FF9900"
+                d="M18 2H6c-1.1 0-2 .9-2 2v3c0 2.24 1.81 4.07 4 4.3V16c0 2.2 1.8 4 4 4h1v2H9v2h6v-2h-3v-2h1c2.2 0 4-1.8 4-4v-4.7c2.19-.23 4-2.06 4-4.3V4c0-1.1-.9-2-2-2zm-10 5V4h2v3c0 .8-.4 1.5-1 1.8-.6-.3-1-1-1-1.8zm9 0c0 .8-.4 1.5-1 1.8-.6-.3-1-1-1-1.8V4h2v3z" />
             </svg>
             <h1>学習セッション完了</h1>
             <p class="result-subtitle" id="result-category-name">カテゴリ名</p>
@@ -192,4 +203,5 @@
   <script src="questions.js"></script>
   <script src="app.js"></script>
 </body>
+
 </html>
